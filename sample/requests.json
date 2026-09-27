@@ -1,0 +1,13 @@
+{
+  "budget": 1,
+  "pattern_error_code": "E_BAD_PATTERN",
+  "dup_error_code": "E_DUP_REQUEST",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "results": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "match", "pattern": "a*b", "text": "ab" },
+    { "id": 2, "kind": "match", "pattern": "a*b", "text": "aXXb" },
+    { "id": 3, "kind": "match", "pattern": "?c", "text": "bc" },
+    { "id": 4, "kind": "match", "pattern": "a*b", "text": "ba" }
+  ]
+}
